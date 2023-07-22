@@ -14,7 +14,6 @@ export default defineConfig(({ mode }) => {
       ViteEjsPlugin((viteConfig) => {
         console.log(viteConfig.env)
         return {
-          env: viteConfig.env,
           isWebBuild: viteConfig.env.VITE_BUILD_TARGET === 'web',
         }
       }),
