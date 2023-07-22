@@ -5,12 +5,10 @@ on:
     branches:
       - feat/cp-build
 env:
-  REACT_APP_BUILD_TARGET: 'web'
-  REACT_APP_AMPLITUDE_KEY: ${{ secrets.REACT_APP_AMPLITUDE_KEY }}
-  REACT_APP_AMPLITUDE_URL: ${{ secrets.REACT_APP_AMPLITUDE_URL }}
-  DISABLE_ESLINT_PLUGIN: true
-  GENERATE_SOURCEMAP: false
-  REACT_APP_API_URL: ${{ secrets.API_URL }}
+  VITE_BUILD_TARGET: 'web'
+  VITE_AMPLITUDE_KEY: ${{ secrets.REACT_APP_AMPLITUDE_KEY }}
+  VITE_AMPLITUDE_URL: ${{ secrets.REACT_APP_AMPLITUDE_URL }}
+  VITE_API_URL: ${{ secrets.API_URL }}
 
 jobs:
   build_and_deploy:
