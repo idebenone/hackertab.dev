@@ -31,7 +31,7 @@ jobs:
         run: yarn build-web
 
       - name: Copy build to remote host
-        uses: appleboy/scp-action@v0.3.0
+        uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.DEPLOY_SSH_HOST }}
           username: ${{ secrets.DEPLOY_SSH_USERNAME }}
