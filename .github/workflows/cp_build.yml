@@ -10,6 +10,7 @@ env:
   REACT_APP_AMPLITUDE_URL: ${{ secrets.REACT_APP_AMPLITUDE_URL }}
   DISABLE_ESLINT_PLUGIN: true
   GENERATE_SOURCEMAP: false
+  REACT_APP_API_URL: ${{ secrets.API_URL }}
 
 jobs:
   build_and_deploy:

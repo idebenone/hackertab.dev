@@ -1,9 +1,8 @@
 import Axios from 'axios';
-import { ResponseInterceptor } from "./interceptors/ResponseInterceptor";
-const packageFile = require('../../package.json')
+import { ResponseInterceptor } from './interceptors/ResponseInterceptor'
 
-const getBaseApi = (fallback: string | null = null) => {
-  return process.env.NODE_ENV === 'production' ? packageFile.proxy : fallback
+const getBaseApi = (fallback: string | undefined = undefined) => {
+  return process.env.NODE_ENV === 'production' ? process.env.REACT_APP_API_URL : fallback
 }
 
 
