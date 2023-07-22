@@ -27,7 +27,7 @@ jobs:
         run: yarn install
 
       - name: Build project
-        run: yarn build-web
+        run: yarn build:web
 
       - name: Copy build to remote host
         uses: appleboy/scp-action@v0.1.4
@@ -36,4 +36,4 @@ jobs:
           username: ${{ secrets.DEPLOY_SSH_USERNAME }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           source: 'build/'
-          target: '/home/ubuntu/hackertab.dev/'
+          target: '~/hackertab.dev/'
