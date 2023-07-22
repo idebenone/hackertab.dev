@@ -36,7 +36,8 @@
     "timeago.js": "^4.0.2",
     "type-fest": "^1.2.0",
     "web-vitals": "^0.2.4",
-    "zustand": "^4.3.3"
+    "zustand": "^4.3.3",
+    "vite-plugin-ejs": "^1.6.4"
   },
   "proxy": "https://api.hackertab.dev/",
   "scripts": {
@@ -96,7 +97,6 @@
     "prettier": "^2.7.1",
     "typescript": "^5.1.6",
     "vite": "^4.4.5",
-    "vite-plugin-ejs": "^1.6.4",
     "vite-plugin-svgr": "^3.2.0",
     "vite-tsconfig-paths": "^4.2.0"
   }

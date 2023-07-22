@@ -9,7 +9,12 @@
     <link rel="preconnect" href="https://hackertab.dev" />
     <script src="/startup.js"></script>
 
-    
+    <% if (env.VITE_BUILD_TARGET === 'web') { %>
+      <title>Hackertab</title>
+      <link rel="manifest" href="%PUBLIC_URL%/web_manifest.json" />
+    <% } else { %>
+      <title>New Tab</title>
+    <% } %>
   </head>
   <body class="preload">
     <noscript>You need to enable JavaScript to run this app.</noscript>
