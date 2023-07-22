@@ -11,10 +11,13 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [
-      ViteEjsPlugin((viteConfig) => ({
-        env: viteConfig.env,
-      })),
-      ,
+      ViteEjsPlugin((viteConfig) => {
+        console.log(viteConfig.env)
+        return {
+          env: viteConfig.env,
+          isWebBuild: viteConfig.env.VITE_BUILD_TARGET === 'web',
+        }
+      }),
       react(),
       viteTsconfigPaths(),
       svgrPlugin(),
