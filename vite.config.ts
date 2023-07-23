@@ -24,6 +24,7 @@ export default defineConfig(({ mode }) => {
       'process.env': {},
     },
     build: {
+      minify: false,
       rollupOptions: {
         ...(buildTarget === 'extension'
           ? {
