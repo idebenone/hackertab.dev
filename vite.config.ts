@@ -24,6 +24,8 @@ export default defineConfig(({ mode }) => {
       'process.env': {},
     },
     build: {
+      emptyOutDir: true,
+      minify: false,
       sourcemap: true,
       target: 'es2018',
       rollupOptions: {
