@@ -86,7 +86,7 @@ const defaultStorage: StateStorage = {
       const newValue = JSON.stringify({ state: newState, version })
       window.localStorage.setItem(name, newValue)
     } catch (e) {
-      console.error(e)
+      console.log('Prefs, SetItem', e)
       window.localStorage.setItem(name, '')
     }
   },
