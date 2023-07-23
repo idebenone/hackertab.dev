@@ -25,9 +25,12 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       emptyOutDir: true,
-      minify: false,
-      sourcemap: true,
-      target: 'es2018',
+      minify: 'terser',
+      terserOptions: {
+        format: {
+          beautify: true,
+        },
+      },
       rollupOptions: {
         ...(buildTarget === 'extension'
           ? {

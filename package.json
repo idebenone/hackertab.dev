@@ -41,7 +41,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build:web": "VITE_BUILD_TARGET=web tsc && vite build -m development",
+    "build:web": "VITE_BUILD_TARGET=web tsc && vite build",
     "build:ext": "./script/build.sh",
     "preview": "vite preview",
     "build:firefox": "./script/build-firefox.sh",
@@ -95,6 +95,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "prettier": "^2.7.1",
+    "terser": "^5.19.2",
     "typescript": "^5.1.6",
     "vite": "^4.4.5",
     "vite-plugin-svgr": "^3.2.0",
