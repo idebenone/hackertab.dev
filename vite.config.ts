@@ -39,6 +39,14 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       open: true,
+      proxy: {
+        '/api': {
+          target: 'https://api.hackertab.dev',
+          changeOrigin: true,
+          secure: false,
+          rewrite: (path) => path.replace(/^\/api/, ''),
+        },
+      },
     },
     resolve: {
       alias: {

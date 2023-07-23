@@ -39,7 +39,6 @@
     "web-vitals": "^0.2.4",
     "zustand": "^4.3.3"
   },
-  "proxy": "https://api.hackertab.dev/",
   "scripts": {
     "start": "vite",
     "build:web": "VITE_BUILD_TARGET=web tsc && vite build",
