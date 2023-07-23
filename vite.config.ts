@@ -25,6 +25,9 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       minify: false,
+      sourcemap: true,
+      ssr: false,
+      target: 'es2018',
       rollupOptions: {
         ...(buildTarget === 'extension'
           ? {

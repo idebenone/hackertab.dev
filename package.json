@@ -43,6 +43,7 @@
     "start": "vite",
     "build:web": "VITE_BUILD_TARGET=web tsc && vite build",
     "build:ext": "./script/build.sh",
+    "preview": "vite preview",
     "build:firefox": "./script/build-firefox.sh",
     "build:chrome": "./script/build-chrome.sh"
   },
