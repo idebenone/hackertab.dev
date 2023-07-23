@@ -39,7 +39,7 @@ export const OnboardingModal = ({ showOnboarding, setShowOnboarding }: Onboardin
       shouldFocusAfterRender={false}
       onRequestClose={() => setShowOnboarding(false)}
       contentLabel="Onboarding"
-      className="Modal"
+      className="Modal scrollable"
       style={{
         overlay: {
           zIndex: 3,
