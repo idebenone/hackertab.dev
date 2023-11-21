@@ -42,7 +42,7 @@
   "scripts": {
     "start": "vite",
     "build:web": "VITE_BUILD_TARGET=web ./script/build.sh",
-    "build:ext": "VITE_BUILD_TARGET=ext ./script/build.sh",
+    "build:ext": "VITE_BUILD_TARGET=extension ./script/build.sh",
     "build:firefox": "./script/build-firefox.sh",
     "build:chrome": "./script/build-chrome.sh"
   },
