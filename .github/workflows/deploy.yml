@@ -37,4 +37,4 @@ jobs:
           username: ${{ secrets.DEPLOY_SSH_USERNAME }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           source: 'dist/'
-          target: '~/hackertab.dev/dist'
+          target: '~/hackertab.dev'
