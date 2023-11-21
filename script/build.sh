@@ -1,12 +1,10 @@
 #!/bin/bash
 
 build() {
-    echo 'building hackertab...'
-
+    echo 'Building Hackertab...'
     rm -rf dist
-
+    tsc
     vite build
 }
 
 build
-
