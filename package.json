@@ -41,7 +41,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build:web": "VITE_BUILD_TARGET=web tsc && vite build",
+    "build:web": "./script/build-web.sh",
     "build:ext": "./script/build.sh",
     "preview": "vite preview",
     "build:firefox": "./script/build-firefox.sh",

@@ -29,10 +29,10 @@ export const DropDownMenu = ({
 
   return (
     <>
-      <span onClick={displayMenu} className="headerSelect" data-target-id={tagId}>
+      <button onClick={displayMenu} className="headerSelect" data-target-id={tagId}>
         {label}
         <RiArrowDownSFill className="headerSelectIcon" />
-      </span>
+      </button>
       <Menu id={tagId} animation={animation.fade}>
         {data &&
           data.map((tag) => {
